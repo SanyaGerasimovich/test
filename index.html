@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="wrapper">
+    <div class="app__container">
+        <div class="app__left_side" id="menu">
+            <div class="left__side">
+                    <div class="side__account">
+                        <div class="window-control-panel">
+                            <div class="red-click"></div>
+                            <div class="yellow-click"></div>
+                            <div class="green-click"></div>
+                        </div>
+                        <div class="account__settings">
+                            <div class="account__menu">
+                                <img src="img/left/account_photo.png" alt="Account Photo">
+                                <img src="img/left/account_circle.png" alt="Account Circle">
+                            </div>
+                            <div class="account__arrow">
+                                <img src="img/left/account_arrow.png" alt="Account Arrow">
+                            </div>
+                            <div class="exit" id="exit" onclick="exit()">
+                                <img src="img/right/exit.png" alt="Exit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side__search">
+                        <div class="search__form">
+                            <form>
+                                <input type="text" class="search search-desktop" placeholder="Search or start a new chat">
+                                <input type="text" class="search-mobile" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="side__menu">
+                        <div class="favourites" id="favourites" onclick="clickFav()">
+                            Favourites
+                        </div>
+                        <div class="friends" id="friends" onclick="clickFriends()">
+                                Friends
+                        </div>
+                        <div class="groups" id="groups" onclick="clickGroups()">
+                                Groups
+                        </div>
+                    </div>
+                    <div class="side__friends">
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                    <img src="img/left/friends/codyfisher.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Cody Fisher
+                                    </div>
+                                    <div class="side__block_massage">
+                                        Haha oh man
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        05:14 pm
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/fix.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/janecooper.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Jane Cooper
+                                    </div>
+                                    <div class="side__block_massage">
+                                        Haha that's terrifying 😂
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        07:38 am
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/chacked.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/floydmiles.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Floyd Miles
+                                    </div>
+                                    <div class="side__block_massage">
+                                        perfect!
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        11:49 pm
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/unchecked5.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/marvinmckinney.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Marvin McKinney
+                                    </div>
+                                    <div class="side__block_massage">
+                                        omg, this is amazing...
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        07:40 am
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/unchecked.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/courtneyhenry.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Courtney Henry
+                                    </div>
+                                    <div class="side__block_massage">
+                                        aww
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        08:20 pm
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/unchecked.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/diannerussell.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Dianne Russell
+                                    </div>
+                                    <div class="side__block_massage">
+                                        I'll be there in 2 mins
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        01:09 am
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/unchecked.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side__friend">
+                            <div class="side__friend_avatar">
+                                <img src="img/left/friends/darelsteward.png" alt="Cody Fisher">
+                            </div>
+                            <div class="side__block">
+                                <div class="side__block_title">
+                                    <div class="side__block_name">
+                                        Darrell Steward
+                                    </div>
+                                    <div class="side__block_massage">
+                                        Haha that's terrifying 😂
+                                    </div>
+                                </div>
+                                <div class="side__info">
+                                    <div class="side__info_time">
+                                        01:55 pm
+                                    </div>
+                                    <span class="side__info_status">
+                                        <img src="img/left/unchecked.png" alt="Fixed">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="app__right_side">
+            <div class="chat-menu">
+                <div class="burger" onclick="openSide()">
+                    <img src="img/right/burger.svg" alt="Burger" class="imgburger" id="burger">
+                </div>
+                <div class="right__friend">
+                    <div class="right__friend_avatar hidden-avatar">
+                        <img src="img/left/friends/janecooper.png" alt="Cody Fisher">
+                    </div>
+                    <div class="right__block">
+                        <div class="right__block_title">
+                            <div class="right__block_name">
+                                Jane Cooper<img src="img/right/heart.png" alt="Heart" class="heart">
+                            </div>
+                            <div class="right__block_online">
+                                <div class="line-circle"></div>Online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__settings">
+                    <a class="icon" id="arrow1">
+                        <img src="img/right/calling.png" alt="Calling">
+                    </a>
+                    <a class="icon" id="arrow2">
+                        <img src="img/right/video.png" alt="Video">
+                    </a>
+                    <a class="icon" id="arrow3">
+                        <img src="img/right/search.png" alt="Search">
+                    </a>
+                    <a class="icon arrow">
+                        <img src="img/right/arrow.png" alt="Arrow">
+                    </a>
+                    <a class="icon hidden" onclick="openArrow()">
+                        <img src="img/right/arrow2.png" alt="Arrow">
+                    </a>
+                </div>
+            </div>
+            <div class="chat-space">
+                <div class="alert">
+                    <span>
+                        <img src="img/right/lock.png" alt="Lock">
+                    </span>
+                    <span>Messages are end-to-end encrypted. No one outside of this chat,
+                        not even WhatsApp can read or listen to them click to learn more.
+                    </span>
+                </div>
+                <div class="message-friend">
+                    <div class="message__outer">
+                        <div class="message__inner">
+                            <div class="message__bubble column">
+                                <img src="img/right/chat/1.png" alt="img">
+                                <img src="img/right/chat/2.png" alt="img">
+                                <img src="img/right/chat/3.png" alt="img">
+                                <img src="img/right/chat/4.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-friend">
+                    <div class="message__outer">
+                        <div class="message__inner">
+                            <div class="message__bubble">
+                                Here are some photos. you were asking about. 😄
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-friend">
+                    <div class="message__outer">
+                        <div class="message__inner">
+                            <div class="message__bubble">
+                                <img src="img/right/chat/audio.png" alt="audio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        3 days ago
+                    </div>
+                </div>
+                <div class="my-message">
+                    <div class="message__outer">
+                        <div class="message__inner">
+                            <div class="message__bubble">
+                                Thanks a lot man! btw love the pictures. 😁
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create-message">
+                <div class="emoji">
+                    <img src="img/right/chat/smile.png" alt="Emoji">
+                    <img src="img/right/chat/plus.png" alt="Add">
+                </div>
+                <div class="message-form">
+                    <div class="search__form">
+                        <form>
+                            <input type="text" class="search" placeholder="Search or start a new chat">
+                        </form>
+                    </div>
+                </div>
+                <div class="voice">
+                    <img src="img/right/chat/voice.png" alt="Voice">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new__massage">
+        <img src="img/newchat.png" alt="Create New Chat">
+    </div>
+    <script>
+        'use strict'
+        function openSide() {
+            document.getElementById('menu').style.left = '0';
+        }
+        function exit() {
+            document.getElementById("menu").style.left = "-100%";
+        }
+        function clickFav() {
+            document.getElementById('favourites').style.background = '#128C7E';
+            document.getElementById('favourites').style.color = '#FFFFFF';
+            document.getElementById('friends').style.background = '#FFFFFF';
+            document.getElementById('friends').style.color = '#5A6A9D';
+            document.getElementById('groups').style.background = '#FFFFFF';
+            document.getElementById('groups').style.color = '#5A6A9D';
+        }
+        function clickFriends() {
+            document.getElementById('friends').style.background = '#128C7E';
+            document.getElementById('friends').style.color = '#FFFFFF';
+            document.getElementById('favourites').style.background = '#FFFFFF';
+            document.getElementById('favourites').style.color = '#5A6A9D';
+            document.getElementById('groups').style.background = '#FFFFFF';
+            document.getElementById('groups').style.color = '#5A6A9D';
+        }
+        function clickGroups() {
+            document.getElementById('groups').style.background = '#128C7E';
+            document.getElementById('groups').style.color = '#FFFFFF';
+            document.getElementById('favourites').style.background = '#FFFFFF';
+            document.getElementById('favourites').style.color = '#5A6A9D';
+            document.getElementById('friends').style.background = '#FFFFFF';
+            document.getElementById('friends').style.color = '#5A6A9D';
+        }
+       /*function openArrow() {
+            document.getElementById('arrow1').style.display = 'flex';
+            document.getElementById('arrow2').style.display = 'flex';
+            document.getElementById('arrow3').style.display = 'flex';
+            document.getElementById("arrow").style.opacity = "1";
+        }*/
+    </script>
+</div>
+</body>
+</html>
